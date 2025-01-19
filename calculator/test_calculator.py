@@ -1,18 +1,18 @@
-import unittest
-from PyQt6.QtWidgets import QApplication, QPushButton
+import unittest 
+from PyQt6.QtWidgets import QApplication, QPushButton  
 from calculator import Calculator  # Assuming the main calculator code is in a file named `calculator.py`
 
 # Create an instance of QApplication
-app = QApplication([])
+app = QApplication([]) # Create a QApplication instance
 
-class TestCalculator(unittest.TestCase):
-    def setUp(self):
+class TestCalculator(unittest.TestCase): # Create a test class that inherits from unittest.TestCase
+    def setUp(self):            # Create a setUp method to set up the Calculator app for testing
         """Set up the Calculator app for testing."""
         self.calc = Calculator()
 
-    def click_button(self, button_text):
-        """Helper function to simulate button clicks."""
-        for button in self.calc.centralWidget().findChildren(QPushButton):
+    def click_button(self, button_text):        # Create a helper function to simulate button clicks
+        """Helper function to simulate button clicks."""    # The helper function takes a button text as input
+        for button in self.calc.centralWidget().findChildren(QPushButton): # Iterate over all QPushButton widgets in the Calculator app
             if button.text() == button_text:
                 button.click()
                 break
@@ -23,7 +23,7 @@ class TestCalculator(unittest.TestCase):
         self.click_button('+')
         self.click_button('2')
         self.click_button('=')
-        self.assertEqual(self.calc.display.text(), '3')
+        self.assertEqual(self.calc.display.text(), '3') # Check if the display text is '3'
 
     def test_subtraction(self):
         """Test subtraction functionality."""
