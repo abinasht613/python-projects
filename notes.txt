@@ -1,0 +1,8 @@
+python task_manager.py
+
+db.tasks.insertOne({title:"aaa",description:"aaa",completed:false})
+db.tasks.find()
+db.tasks.find( {title: "aaa"} )
+
+db.tasks.deleteOne({_id:ObjectId("678c9dabb0f50cf9dc36c48e")})
+db.tasks.updateOne({"_id": ObjectId("678ca69ec436468712544ca7")}, {"$set": {"completed": true}})
