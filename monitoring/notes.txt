@@ -1,0 +1,3 @@
+sudo systemctl enable log_monitor.service
+
+sudo systemctl start log_monitor.service
