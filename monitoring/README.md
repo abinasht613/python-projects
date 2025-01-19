@@ -1,4 +1,4 @@
-#Automated Log Monitoring System
+# Automated Log Monitoring System
 
 Project Overview:
 This project automates log file monitoring in an industry setting. It continuously reads system logs (or application logs) and detects errors, sending email alerts when critical issues occur.
