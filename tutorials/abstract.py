@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Myabstract(ABC):
 	@abstractmethod
 	def myAbstractMethod(self):
@@ -7,6 +8,7 @@ class Myabstract(ABC):
 
 	def myConcreteMethodAbstract(self):
 		print("print from Myabstract myConcreteMethod")
+
 class MyConcreteClass(Myabstract):
 	def myConcreteMethod(self):
 		print("print from MyConcreteClass myConcreteMethod")

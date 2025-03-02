@@ -116,17 +116,6 @@ age=31
 multiplePlaceHolder = "My Name is {} age is {}"
 print(multiplePlaceHolder.format(myname,age))
 
-oldList =	[1,2,3,5,7,8,9,11,12,13]				#list comprehension
-newList	=	[x**2 for x in oldList if x%2==0]
-print(f"{newList}")
 
-
-													#dictionary comprehension
-keys	=	['a','b','c','d']
-values	=	[1,2,3,4]
-mydictCom	=	{k:v for (k,v) in zip(keys,values)}
-print(mydictCom)
-evenSquare	=	{x:x**2 for x in values if x%2==0}
-print(evenSquare)
 
 
